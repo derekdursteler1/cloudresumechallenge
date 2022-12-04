@@ -1,5 +1,3 @@
-AWSTemplateFormatVersion: '2010-09-09'
-Transform: AWS::Serverless-2016-10-31
 on:
   push:
     branches:
@@ -22,4 +20,4 @@ jobs:
 # Run Unit tests- Specify unit tests here 
 
 # sam deploy
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-hello-world --s3-bucket arn:aws:s3:::aws-sam-cli-managed-default-samclisourcebucket-hhlqwy8868o7 --capabilities CAPABILITY_IAM --region us-east-1 
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-hello-world --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-hhlqwy8868o7 --capabilities CAPABILITY_IAM --region us-east-1 
